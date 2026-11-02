@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MPEK Group の公式サイト">
+<title>MPEK Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;600;700&family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+ body { margin: 0; background: #0a0a0c; color: #ffffff; font-family: 'Noto Sans JP', sans-serif; line-height: 1.6; overflow-x: hidden; min-height: 0; }
+  a { color: inherit; text-decoration: none; }
+  header { position: sticky; top: 0; z-index: 100; background: #0a0a0c; backdrop-filter: blur(8px); border-bottom: 1px solid #22222a; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; font-weight: 900; letter-spacing: 2px; color: #ffffff; }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; }
+  .nav-link { font-size: 0.85rem; font-weight: 600; color: #a0a0ab; transition: color 0.2s; }
+  .nav-link:hover, .nav-link.active { color: #ff1e27; }
+  .page { display: none; }
+  .page.active { display: block; }
+  footer { text-align: center; padding: 30px 20px; border-top: 1px solid #22222a; background: transparent; color: #a0a0ab; font-size: 0.8rem; }
+  @media (max-width: 600px) {
+    header { padding: 10px 14px; flex-direction: column; gap: 8px; }
+    nav { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">うおw</div>
+    <nav><a href="#page-home" class="nav-link" data-page="home">ホーム</a><a href="#page-about" class="nav-link" data-page="about">アバウト</a><a href="#page-contact" class="nav-link" data-page="contact">コンタクト</a></nav>
+  </header>
+  <div class="page" id="page-home" style="display:block;"><div style="padding:80px 20px;text-align:center;background:linear-gradient(135deg, rgba(10,10,12,0.7), rgba(10,10,12,0.95));">
+      <h1 style="font-family:'Orbitron', sans-serif;font-size:2.5rem;font-weight:900;margin:0 0 12px;color:#ffffff;letter-spacing:2px;">うおw</h1>
+      <p style="color:#a0a0ab;margin:0 0 24px;font-size:1rem;">あなたのブランドのキャッチコピーをここに。</p>
+      <a href="#" style="display:inline-block;padding:12px 28px;background:#ff1e27;color:#fff;font-weight:700;font-size:0.9rem;clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); border-radius:0;">VIEW WORKS</a>
+    </div><div style="padding:40px 30px;background:#0a0a0c;">
+      <h2 style="font-family:'Orbitron', sans-serif;font-size:1.6rem;font-weight:900;margin:0 0 16px;color:#ffffff;border-left:4px solid #ff1e27;padding-left:12px;">ABOUT US</h2>
+      <p style="color:#a0a0ab;line-height:1.8;margin:0;white-space:pre-wrap;">ここに会社概要やブランドの紹介文を書きます。あなたのメーカーの魅力を伝えましょう。</p>
+    </div><div style="padding:40px 30px;background:#0a0a0c;">
+      <h2 style="font-family:'Orbitron', sans-serif;font-size:1.6rem;font-weight:900;margin:0 0 24px;color:#ffffff;border-left:4px solid #ff1e27;padding-left:12px;">PROJECTS</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
+        <div style="background:#141419;border:1px solid #22222a;border-radius:8px;padding:20px;">
+          <span style="font-family:'Orbitron', sans-serif;font-size:0.7rem;color:#ff1e27;font-weight:700;letter-spacing:1px;">SERVICE</span>
+          <h3 style="margin:8px 0;color:#ffffff;font-size:1.1rem;">サービス1</h3>
+          <p style="color:#a0a0ab;font-size:0.85rem;margin:0 0 12px;">サービスの説明をここに書きます。</p>
+          <a href="#" style="color:#ff1e27;font-size:0.8rem;font-weight:bold;">詳しく見る →</a>
+        </div><div style="background:#141419;border:1px solid #22222a;border-radius:8px;padding:20px;">
+          <span style="font-family:'Orbitron', sans-serif;font-size:0.7rem;color:#ff1e27;font-weight:700;letter-spacing:1px;">SERVICE</span>
+          <h3 style="margin:8px 0;color:#ffffff;font-size:1.1rem;">サービス2</h3>
+          <p style="color:#a0a0ab;font-size:0.85rem;margin:0 0 12px;">サービスの説明をここに書きます。</p>
+          <a href="#" style="color:#ff1e27;font-size:0.8rem;font-weight:bold;">詳しく見る →</a>
+        </div>
+      </div>
+    </div></div><div class="page" id="page-about" style="display:none;"><div style="padding:40px 30px;background:#0a0a0c;">
+      <h2 style="font-family:'Orbitron', sans-serif;font-size:1.6rem;font-weight:900;margin:0 0 16px;color:#ffffff;border-left:4px solid #ff1e27;padding-left:12px;">ABOUT</h2>
+      <p style="color:#a0a0ab;line-height:1.8;margin:0;white-space:pre-wrap;">私たちについての詳細をここに書きます。</p>
+    </div></div><div class="page" id="page-contact" style="display:none;"><div style="padding:50px 20px;background:#0a0a0c;text-align:center;">
+      <h2 style="font-family:'Orbitron', sans-serif;font-size:1.6rem;font-weight:900;margin:0 0 12px;color:#ffffff;">CONTACT</h2>
+      <p style="color:#a0a0ab;margin:0 0 20px;">お問い合わせはこちらから。</p>
+      <a href="#" style="display:inline-block;padding:12px 28px;background:#ff1e27;color:#fff;font-weight:700;clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); border-radius:0;">Twitter DM</a>
+    </div></div>
+  <footer>&copy; MPEK Group — Created with 架空車街</footer>
+  <script>
+    function showPage() {
+      var hash = location.hash.replace('#page-', '') || 'home';
+      document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); p.style.display = 'none'; });
+      var target = document.getElementById('page-' + hash);
+      if (target) { target.classList.add('active'); target.style.display = 'block'; }
+      document.querySelectorAll('.nav-link').forEach(function(a) {
+        a.classList.toggle('active', a.dataset.page === hash);
+      });
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', showPage);
+    showPage();
+  </script>
+</body>
+</html>
